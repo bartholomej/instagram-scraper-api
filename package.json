@@ -1,7 +1,7 @@
 {
-  "name": "node-instagram-api",
-  "version": "0.1.0",
-  "description": "Simple NPM library for scraping Instagram user profile",
+  "name": "instagram-scraper-api",
+  "version": "0.0.0",
+  "description": "Get user data and posts by scraping Instagram's user page. Without API key or oAuth!",
   "main": "index.js",
   "author": "BART! <bart@bartweb.cz>",
   "scripts": {
@@ -44,13 +44,13 @@
     "typescript": "^4.1.2"
   },
   "repository": {
-    "url": "git+https://github.com/bartholomej/node-instagram-api.git",
+    "url": "git+https://github.com/bartholomej/instagram-scraper-api.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bartholomej/node-instagram-api/issues"
+    "url": "https://github.com/bartholomej/instagram-scraper-api/issues"
   },
-  "homepage": "https://github.com/bartholomej/node-instagram-api#readme",
+  "homepage": "https://github.com/bartholomej/instagram-scraper-api#readme",
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && yarn run lint"

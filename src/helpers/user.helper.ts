@@ -8,7 +8,7 @@ export const scrapeUser = (html: string): RootObject => {
     const dataString = html.match(userDataRegex)[1];
     json = JSON.parse(dataString);
   } catch (e) {
-    throw new Error('node-instagram-api: Scraping error');
+    throw new Error('instagram-scraper-api: Scraping error');
   }
   return json;
 };

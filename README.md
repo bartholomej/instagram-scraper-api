@@ -1,29 +1,29 @@
-[![npm version](https://badge.fury.io/js/node-instagram-api.svg)](https://badge.fury.io/js/node-instagram-api)
-[![Package License](https://img.shields.io/npm/l/node-instagram-api.svg)](https://www.npmjs.com/node-instagram-api)
-[![Build & Publish](https://github.com/bartholomej/node-instagram-api/workflows/Build%20&%20Publish/badge.svg)](https://github.com/bartholomej/node-instagram-api/actions)
-[![codecov](https://codecov.io/gh/bartholomej/node-instagram-api/branch/master/graph/badge.svg?token=YQH9UoVrGP)](https://codecov.io/gh/bartholomej/node-instagram-api)
+[![npm version](https://badge.fury.io/js/instagram-scraper-api.svg)](https://badge.fury.io/js/instagram-scraper-api)
+[![Package License](https://img.shields.io/npm/l/instagram-scraper-api.svg)](https://www.npmjs.com/instagram-scraper-api)
+[![Build & Publish](https://github.com/bartholomej/instagram-scraper-api/workflows/Build%20&%20Publish/badge.svg)](https://github.com/bartholomej/instagram-scraper-api/actions)
+[![codecov](https://codecov.io/gh/bartholomej/instagram-scraper-api/branch/master/graph/badge.svg?token=YQH9UoVrGP)](https://codecov.io/gh/bartholomej/instagram-scraper-api)
 
-# Instagram API
+# Instagram Scraper API
 
-> Tiny NPM library for getting public user's profile and posts.
+> Get user data and posts by scraping Instagram's user page. Without any API keys or oAuths!
 >
-> - No API key needed!
-> - No registration needed
+> - API key NOT required!
+> - Not any registration needed
 > - Browser + Node.js (SSR) support
-> - TypeScript 100%
+> - 100% TypeScript
 
 ## Install
 
 via yarn
 
 ```bash
-yarn add node-instagram-api
+yarn add instagram-scraper-api
 ```
 
 via npm
 
 ```bash
-npm install node-instagram-api --save
+npm install instagram-scraper-api --save
 ```
 
 ## Usage
@@ -31,9 +31,12 @@ npm install node-instagram-api --save
 Get latest posts from [Will Smith](https://www.instagram.com/willsmith)
 
 ```javascript
-import { instagram } from 'node-instagram-api';
+import { instagram } from 'instagram-scraper-api';
 
-instagram.user('willsmith').then((user) => console.log(user));
+instagram
+  .user('willsmith')
+  .then((user) => console.log(user))
+  .catch((err) => console.error(err));
 ```
 
 #### Results
@@ -62,7 +65,7 @@ instagram.user('willsmith').then((user) => console.log(user));
       commentsCount: 6217,
       likesCount: 1334788,
       time: 1605928764,
-      location: undefined
+      location: null
     },
     {
       id: '2446931950146244085',
@@ -73,7 +76,7 @@ instagram.user('willsmith').then((user) => console.log(user));
       commentsCount: 6396,
       likesCount: 1320494,
       time: 1605917041,
-      location: undefined
+      location: null
     }
   ]
 }
@@ -92,8 +95,8 @@ Pull requests for any improvements would be great!
 ### Developing and debugging this library
 
 ```bash
-git clone git@github.com:bartholomej/node-instagram-api.git
-cd node-instagram-api
+git clone git@github.com:bartholomej/instagram-scraper-api.git
+cd instagram-scraper-api
 yarn
 yarn start
 ```

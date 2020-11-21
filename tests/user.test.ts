@@ -49,6 +49,6 @@ describe('Scrape user data', () => {
   test('Malformed page', () => {
     expect(() => {
       scrapeUser(`<html></html>`);
-    }).toThrowError('node-instagram-api: Scraping error');
+    }).toThrowError('instagram-scraper-api: Scraping error');
   });
 });
