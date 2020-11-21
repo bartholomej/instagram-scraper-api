@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/instagram-scraper-api.svg)](https://badge.fury.io/js/instagram-scraper-api)
+[![npm downloads](https://img.shields.io/npm/dt/instagram-scraper-api.svg)](https://npm.im/instagram-scraper-api)
 [![Package License](https://img.shields.io/npm/l/instagram-scraper-api.svg)](https://www.npmjs.com/instagram-scraper-api)
 [![Build & Publish](https://github.com/bartholomej/instagram-scraper-api/workflows/Build%20&%20Publish/badge.svg)](https://github.com/bartholomej/instagram-scraper-api/actions)
 [![codecov](https://codecov.io/gh/bartholomej/instagram-scraper-api/branch/master/graph/badge.svg?token=YQH9UoVrGP)](https://codecov.io/gh/bartholomej/instagram-scraper-api)
