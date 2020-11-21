@@ -13,6 +13,10 @@
 > - Browser + Node.js (SSR) support
 > - 100% TypeScript
 
+## Demo
+
+Here is the live [example](https://stackblitz.com/edit/instagram-scraper-api?file=index.ts)!
+
 ## Install
 
 via yarn
@@ -82,6 +86,8 @@ instagram
   ]
 }
 ```
+
+Here is the [demo](https://stackblitz.com/edit/instagram-scraper-api?file=index.ts)!
 
 ### More
 
