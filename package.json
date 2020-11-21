@@ -13,6 +13,7 @@
     "demo": "ts-node demo",
     "lint": "eslint ./src/**/**/* --fix",
     "test": "jest",
+    "test:coverage": "jest --collect-coverage",
     "postversion": "git push && git push --follow-tags",
     "release:patch": "git checkout master && npm version patch -m \"chore(update): patch release %s 🐛 \"",
     "release:minor": "git checkout master && npm version minor -m \"chore(update): release %s 🚀\"",

@@ -1,0 +1,25 @@
+import { RootUser } from '../src/interfaces/raw.interface';
+import { UserScraper } from '../src/services/user.service';
+
+// Live API tests
+const USER = 'willsmith';
+
+describe('Simple call for raw userData', () => {
+  let user: RootUser = null;
+  beforeAll(async () => {
+    const userScraper = new UserScraper();
+    const res = userScraper.user(USER);
+    const results = await res;
+    user = results.entry_data.ProfilePage[0].graphql.user;
+  });
+
+  test('Should have any post', async () => {
+    const postsCount = user.edge_owner_to_timeline_media.count;
+    expect(postsCount).toBeGreaterThan(1);
+  });
+
+  test('Should have bio filled', async () => {
+    const bio = user.biography;
+    expect(bio).toBeDefined();
+  });
+});
