@@ -1,6 +1,6 @@
 {
   "name": "instagram-scraper-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get user data and posts by scraping Instagram's user page. Without API key or oAuth!",
   "main": "index.js",
   "author": "BART! <bart@bartweb.cz>",
