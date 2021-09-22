@@ -130,7 +130,7 @@ That's why, with this library, what happens on your device stays on your device 
 
 ## License
 
-Copyright &copy; 2020 [Lukas Bartak](http://bartweb.cz)
+Copyright &copy; 2021 [Lukas Bartak](http://bartweb.cz)
 
 Proudly powered by nature 🗻, wind 💨, tea 🍵 and beer 🍺 ;)
 
