@@ -1,8 +1,0 @@
-import { fetchUser } from '../src/fetchers';
-
-describe('Fetch Instagram user', () => {
-  test('Fetch `@willsmith` user', async () => {
-    const html = await fetchUser('willsmith');
-    expect(html).toContain('willsmith');
-  });
-});
